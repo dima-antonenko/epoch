@@ -1,0 +1,14 @@
+[package]
+name = "epoch"
+version = "0.1.0"
+edition = "2024"
+description = "Teaching implementations of safe memory reclamation and lock-free collections"
+license = "MIT"
+readme = "README.md"
+publish = false
+
+[dependencies]
+loom = { version = "0.7", optional = true }
+
+[features]
+loom = ["dep:loom"]
